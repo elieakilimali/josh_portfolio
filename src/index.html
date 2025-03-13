@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <!-- Inclure la section Hebg-gray-700ro -->
+     <div class="h-screen bg-gray-900 ">
+        <div id="hero"></div>
+        <div id="about"></div>
+
+     </div>
+
+
+    <script>
+        // Charger hero.html dynamiquement
+        fetch("sections/hero.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("hero").innerHTML = data);
+        
+        // Charger about.html dynamiquement 
+        fetch("sections/about.html")
+        .then(response=>response.text())
+        .then(data => document.getElementById("about").innerHTML = data);
+
+    </script>
+</body>
+</html>
