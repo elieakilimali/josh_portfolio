@@ -9,8 +9,11 @@
 <body class="bg-gray-800 text-white">
     <!-- Inclure la section Hebg-gray-700ro -->
      <div class="h-screen bg-gray-900 ">
+
         <div id="hero"></div>
         <div id="about"></div>
+        <div id="expiriences"></div>
+
 
      </div>
 
@@ -25,6 +28,12 @@
         fetch("sections/about.html")
         .then(response=>response.text())
         .then(data => document.getElementById("about").innerHTML = data);
+
+        // Charger expiriences.html dynamiquement 
+        fetch("sections/expiriences.html")
+        .then(response => response.text())
+        .then(data =>document.getElementById("expiriences").innerHTML = data)
+
 
     </script>
 </body>
