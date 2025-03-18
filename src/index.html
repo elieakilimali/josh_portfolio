@@ -13,6 +13,7 @@
         <div id="hero"></div>
         <div id="about"></div>
         <div id="expiriences"></div>
+        <div id="events"></div>
 
 
      </div>
@@ -34,6 +35,11 @@
         .then(response => response.text())
         .then(data =>document.getElementById("expiriences").innerHTML = data)
 
+
+        // Charger events.html dynamiquement 
+        fetch("sections/events.html")
+        .then(response => response.text())
+        .then(data=>document.getElementById("events").innerHTML = data)
 
     </script>
 </body>
