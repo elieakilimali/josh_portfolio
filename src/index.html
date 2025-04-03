@@ -10,37 +10,190 @@
     <!-- Inclure la section Hebg-gray-700ro -->
      <div class="h-screen bg-gray-900 ">
 
-        <div id="hero"></div>
-        <div id="about"></div>
-        <div id="expiriences"></div>
-        <div id="events"></div>
+
+
+    <!-- HERO  -->
+
+
+    <main id="heroSection" class=" text-white px-[10%] md:px-[15%] min-h-[100vh]">
+        <nav class="flex items-center justify-end gap-8 md:gap-24  py-8">
+            <ul class="hidden md:flex gap-8 bg-gray-800 px-8 py-4 rounded-full border-2 border-amber-500">
+                <li><a href="#">Appropos</a></li>
+                <li><a href="#">Parcours</a></li>
+                <li><a href="#">Evenements</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="menu" class="bg-gray-800 py-2 px-4 rounded-full border-2 border-amber-500  md:hidden">
+                <span>Menu</span>
+                <i>#</i>
+            </div>
+            <div class="bg-gray-800 rounded-full w-12 h-12 flex items-center justify-center border-2 border-amber-500 ">
+                <a href="#">#</a>
+            </div>
+        </nav>
+    
+        <section class="mt-32  md:w-2/3 " >
+            <div id="logo" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                <img src="/src/images/img2.jpg" class="w-full h-full rounded-full" alt="">
+                <!-- Ms -->
+            </div>
+            <!-- Grand titre  -->
+            <div class="mt-8">
+                <!-- Text bloc -->
+                <div>
+                    <h1 class=" text-5xl font-bold">Je suis  <span class="text-amber-500">Josh Ms</span> , Chanteur Lyrique Basse-Bariton</h1>
+                    <p class="my-8">Je suis Josh Mus, chanteur d’opéra et artiste classique basé au Burundi. J’apporte la musique intemporelle à la vie par une voix puissante et des interprétations sincères, partageant la beauté de l’art lyrique avec le monde.</p>
+                </div>
+                <!-- boutton  -->
+                 <div class="my-8 bg-gray-800 inline-block px-8 py-2 rounded-full">
+                    <a href="#">Download CV</a>
+                 </div>
+                <!-- Icons bloc  -->
+                <div class="flex gap-8">
+                    <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                        <i>X</i>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                        <i>F</i>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                        <i>I</i>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                        <i>Y</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ABOUT  -->
+
+
+    <section id="about_section" class="bg-black/10 flex flex-col md:flex-row  gap-12 px-[10%] py-[5%] md:px-[15%] min-h-[100vh] ">
+    
+        <!-- image side  -->
+        <div class=" md:w-1/2  bg-gray-900/80 overflow-hidden md:transform md:-skew-x-6 rounded-[3rem]"  >
+            <img src="/src/images/chanteur2-removebg-preview.png" class=" w-full h-full object-cover opacity-80 " alt="">
+        </div>
+ 
+        <!-- Text side  -->
+        <div class=" md:w-1/2 ">
+            <div>
+                <h1 class="font-bold text-5xl mb-4 ">Voici  mon  <span class="text-amber-500">histoire</span> avec la musique</h1>
+                <p class="my-8 text-white/70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam in ducimus labore impedit, eos sunt molestias velit facere iste architecto et iusto eaque similique!</p>
+                <p class="my-8 text-white/70">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam temporibus ipsa voluptatem quos doloribus veritatis mollitia nobis sit. Nam accusantium distinctio autem, repellat voluptates dolorem.</p>
+                <p class="my-8 text-white/70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, id quae! Optio, ullam quo, esse, mollitia numquam id enim nulla suscipit sed non voluptates asperiores!</p>
+
+                    <!-- Icons bloc  -->
+                <div class="">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center">
+                            <i>I</i>
+                        </div>
+                        <small>Suivez moi sur Instagram</small>
+                    </div>
+
+                   <div class="flex items-center gap-4 py-2">
+                        <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center">
+                            <i>F</i>
+                        </div>
+                        <small>Suivez moi sur Facebook</small>
+                   </div>
+
+              
+
+                   <div class="flex items-center gap-4 py-2">
+                        <div class="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center">
+                            <i>Y</i>
+                        </div>
+                        <small>Suivez moi sur YOutube</small>
+                   </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+
+    <!-- EVENT  -->
+    <section class="flex flex-col px-[10%] py-[5%] md:px-[10%] min-h-[100vh]">
+        <div class="text-center">
+            <small>Up Coming Events</small>
+            <h1 class="text-5xl">Evenements</h1>
+        </div>
+    
+        <!-- Carousel Section -->
+        <div class="relative">
+            <div id="carousel" class="flex overflow-hidden">
+                <!-- Event 1 -->
+                <div class="flex-none w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div class="bg-gray-900 rounded-lg">
+                        <img src="/src/images/chanteur2.jpg" class="w-full h-full rounded-lg" alt="Event 1">
+                        <div class="my-4 p-4">
+                            <h3 class="my-2 text-2xl font-bold">Concert à PANZI</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In deserunt error at iste ut.</p>
+                            <div class="my-2">
+                                <a href="#">En savoir plus ...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Event 2 -->
+                <div class="flex-none w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div class="bg-gray-900 rounded-lg">
+                        <img src="/src/images/chanteur2.jpg" class="w-full h-full rounded-lg" alt="Event 2">
+                        <div class="my-4 p-4">
+                            <h3 class="my-2 text-2xl font-bold">Concert à PANZI</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In deserunt error at iste ut.</p>
+                            <div class="my-2">
+                                <a href="#">En savoir plus ...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Event 3 -->
+                <div class="flex-none w-full sm:w-1/2 md:w-1/3 p-2">
+                    <div class="bg-gray-900 rounded-lg">
+                        <img src="/src/images/chanteur2.jpg" class="w-full h-full rounded-lg" alt="Event 3">
+                        <div class="my-4 p-4">
+                            <h3 class="my-2 text-2xl font-bold">Concert à PANZI</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In deserunt error at iste ut.</p>
+                            <div class="my-2">
+                                <a href="#">En savoir plus ...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Carousel Controls -->
+            <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
+                &#10094;
+            </button>
+            <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
+                &#10095;
+            </button>
+        </div>
+    </section>
+    
+
+
+
+
+
+
 
 
      </div>
 
 
-    <script>
-        // Charger hero.html dynamiquement
-        fetch("sections/hero.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("hero").innerHTML = data);
-        
-        // Charger about.html dynamiquement 
-        fetch("sections/about.html")
-        .then(response=>response.text())
-        .then(data => document.getElementById("about").innerHTML = data);
-
-        // Charger expiriences.html dynamiquement 
-        fetch("sections/expiriences.html")
-        .then(response => response.text())
-        .then(data =>document.getElementById("expiriences").innerHTML = data)
 
 
-        // Charger events.html dynamiquement 
-        fetch("sections/events.html")
-        .then(response => response.text())
-        .then(data=>document.getElementById("events").innerHTML = data)
 
-    </script>
+
+    
 </body>
 </html>
